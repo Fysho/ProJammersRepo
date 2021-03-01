@@ -54,8 +54,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\PlayerControl.cs" />
-    <Compile Include="Assets\SceneCommands.cs" />
     <Compile Include="Assets\OverworldUI.cs" />
+    <Compile Include="Assets\SceneCommands.cs" />
+    <Compile Include="Assets\Card\CardManager.cs" />
+    <Compile Include="Assets\Card\Card.cs" />
+    <Compile Include="Assets\Card\CardDisplay.cs" />
+    <Compile Include="Assets\Card\Rat.cs" />
+    <Compile Include="Assets\Card\Wolf.cs" />
+    <Compile Include="Assets\Card\Spider.cs" />
+    <Compile Include="Assets\Entity\EntityManager.cs" />
+    <Compile Include="Assets\Entity\Entity.cs" />
+    <Compile Include="Assets\Entity\RatEntity.cs" />
+    <Compile Include="Assets\Entity\EntityDisplay.cs" />
+    <Compile Include="Assets\Entity\SpiderEntity.cs" />
+    <Compile Include="Assets\Entity\WolfEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
