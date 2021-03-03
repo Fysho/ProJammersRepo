@@ -111,4 +111,21 @@ public class EntityManager : MonoBehaviour
         }
        
     }
+    
+    //or BuffType
+    //Race = rat, wolf etc
+    //Type = dark, fire, ice etc
+    //public void BuffRace(string race, int attack, int health)
+    //{
+    //    foreach(Entity entity in _friendlyEntities)
+    //    {
+    //        if(entity.race == race)
+    //        {
+    //            entity.buff(attack, health);
+    //            entity.update();
+    //        }
+    //    }
+    //}
+
+
 }
