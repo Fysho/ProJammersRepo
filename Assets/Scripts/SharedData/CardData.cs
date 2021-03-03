@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
+using TMPro;
 
 namespace HexCardGame.SharedData
 {
@@ -10,6 +11,7 @@ namespace HexCardGame.SharedData
         int Score { get; }
         Sprite Artwork { get; }
         Sprite Cardback { get; }
+        string Description { get; }
         Tile Tile { get; }
     }
 
@@ -42,6 +44,12 @@ namespace HexCardGame.SharedData
         {
             get => cardback;
             set => cardback = value;
+        }
+
+        public string Description
+        {
+            get => description;
+            set => description = value;
         }
 
         public Tile Tile => tile;

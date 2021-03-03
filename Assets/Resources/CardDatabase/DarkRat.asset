@@ -17,7 +17,7 @@ MonoBehaviour:
   cost: 3
   description: A very dart rat
   id: 0
-  nameCard: 
+  nameCard: Dark Rat
   score: 0
-  stringId: 
+  stringId: DRat
   tile: {fileID: 0}

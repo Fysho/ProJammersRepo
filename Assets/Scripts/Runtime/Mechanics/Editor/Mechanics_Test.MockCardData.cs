@@ -1,6 +1,7 @@
 ﻿using HexCardGame.SharedData;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using TMPro;
 
 namespace HexCardGame.Runtime.Test
 {
@@ -14,6 +15,7 @@ namespace HexCardGame.Runtime.Test
             public Sprite Artwork { get; }
             public Sprite Cardback { get;}
             public Tile Tile { get; }
+            public string Description { get; }
         }
     }
 }

@@ -3,6 +3,7 @@ using HexCardGame;
 using HexCardGame.SharedData;
 using Tools.Input.Mouse;
 using UnityEngine;
+using TMPro;
 
 namespace Tools.UI.Card
 {
@@ -36,6 +37,7 @@ namespace Tools.UI.Card
         public UiCardParameters CardConfigsParameters => cardConfigsParameters;
         [SerializeField] SpriteRenderer artwork;
         [SerializeField] SpriteRenderer cardback;
+        [SerializeField] TMP_Text carddetail;
         [SerializeField] public UiCardParameters cardConfigsParameters;
         UiCardHandFsm Fsm { get; set; }
         Transform MyTransform { get; set; }
@@ -101,6 +103,7 @@ namespace Tools.UI.Card
         {
             artwork.sprite = data.Artwork;
             cardback.sprite = data.Cardback;
+            carddetail.text = data.Description;
             id = playerId;
             dataAccess = access;
         }
