@@ -80,6 +80,7 @@ public class MapGenerater : MonoBehaviour
                 int card = (int) (_random.NextDouble() * artThings.Length);
                 GameObject newThing = GameObject.Instantiate(artThings[card]);
                 newThing.transform.position = new Vector3(_xStart + column * _columnWidth + xrand, thisY + yrand, 0);
+                newThing.transform.SetParent(EntityContainer.transform);
                 MapElement mapElement = new MapElement(newThing, column, layer);
                 columnElements.Add(mapElement);
             }
@@ -134,6 +135,7 @@ public class MapGenerater : MonoBehaviour
             int line = (int)(_random.NextDouble() * mapLines.Length);
             GameObject newThing = GameObject.Instantiate(mapLines[line]);
             newThing.transform.position = currentPoint;
+            newThing.transform.SetParent(EntityContainer.transform);
 
         }
     }
