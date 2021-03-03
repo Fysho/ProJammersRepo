@@ -16,6 +16,10 @@ namespace HexCardGame.Runtime.Test
             public Sprite Cardback { get;}
             public Tile Tile { get; }
             public string Description { get; }
+            public int Health { get; set; }
+            public int Attack { get; }
+            public int Buff { get; }
+            public string BuffType { get; }
         }
     }
 }

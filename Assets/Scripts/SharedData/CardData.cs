@@ -7,6 +7,10 @@ namespace HexCardGame.SharedData
     public interface ICardData
     {
         CardId Id { get; }
+        int Health { get; set; }
+        int Attack { get; }
+        int Buff { get; }
+        string BuffType { get; }
         int Cost { get; }
         int Score { get; }
         Sprite Artwork { get; }
@@ -27,12 +31,18 @@ namespace HexCardGame.SharedData
         [Range(0, 10), SerializeField] int score;
         [SerializeField] string stringId;
         [SerializeField] Tile tile;
+        [Range(0, 10), SerializeField] int health;
+        [Range(0, 10), SerializeField] int attack;
+        [Range(0, 10), SerializeField] int buff;
+        [SerializeField] string bufftype;
 
         // -------------------------------------------------------------------------------------------------------------
 
         public CardId Id => id;
         public int Cost => cost;
         public int Score => score;
+        public int Attack => attack;
+        public int Buff => buff;
 
         public Sprite Artwork
         {
@@ -50,6 +60,18 @@ namespace HexCardGame.SharedData
         {
             get => description;
             set => description = value;
+        }
+
+        public string BuffType
+        {
+            get => bufftype;
+            set => bufftype = value;
+        }
+
+        public int Health 
+        {
+            get => health;
+            set => health = value;
         }
 
         public Tile Tile => tile;

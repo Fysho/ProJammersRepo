@@ -20,6 +20,7 @@ namespace Tools.UI.Card
         Rigidbody2D IUiCardComponents.Rigidbody => MyRigidbody;
         IMouseInput IUiCardComponents.Input => MyInput;
         UiCardHandSelector IUiCardComponents.HandSelector => HandSelector;
+        TMP_Text IUiCardComponents.Text => MyText;
 
         #endregion
 
@@ -44,6 +45,7 @@ namespace Tools.UI.Card
         Collider2D MyCollider { get; set; }
         SpriteRenderer[] MyRenderers { get; set; }
         SpriteRenderer MyRenderer { get; set; }
+        TMP_Text MyText { get; set; }
         Rigidbody2D MyRigidbody { get; set; }
         IMouseInput MyInput { get; set; }
         UiCardHandSelector HandSelector { get; set; }
@@ -124,6 +126,7 @@ namespace Tools.UI.Card
             HandSelector = transform.GetComponentInParent<UiCardHandSelector>();
             MyRenderers = GetComponentsInChildren<SpriteRenderer>();
             MyRenderer = GetComponent<SpriteRenderer>();
+            MyText = GetComponent<TMP_Text>();
 
             //transform
             Scale = new UiMotionScaleCard(this);

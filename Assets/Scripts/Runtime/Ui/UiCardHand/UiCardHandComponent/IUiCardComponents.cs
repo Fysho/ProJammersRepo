@@ -1,5 +1,6 @@
 ﻿using Tools.Input.Mouse;
 using UnityEngine;
+using TMPro;
 
 namespace Tools.UI.Card
 {
@@ -19,5 +20,6 @@ namespace Tools.UI.Card
         IMouseInput Input { get; }
         GameObject gameObject { get; }
         Transform transform { get; }
+        TMP_Text Text { get; }
     }
 }
